@@ -1,8 +1,8 @@
 void ledRVBpwm(int pwmRouge, int pwmVert, int pwmBleu);
 
-const int ledRouge=3; // Constante pour la broche 3
-const int ledVert=5; // Constante pour la broche 5
-const int ledBleu=6; // Constante pour la broche 6
+const int ledRouge=3; 
+const int ledVert=5; 
+const int ledBleu=6; 
 
 int tension, val;
 void setup() {
@@ -27,7 +27,7 @@ ledRVBpwm(val-255, 255-(val-255),0);
 
 }
 
-void ledRVBpwm(int pwmRouge, int pwmVert, int pwmBleu) { // reçoit valeur 0-255 par couleur
+void ledRVBpwm(int pwmRouge, int pwmVert, int pwmBleu) { 
 
 analogWrite(ledRouge, pwmRouge);
 analogWrite(ledVert, pwmVert);
